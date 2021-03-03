@@ -1,0 +1,5 @@
+# Schema for the configuration files of the asu theme.
+
+asu.settings:
+  type: theme_settings
+  label: 'asu settings'

@@ -1,0 +1,10 @@
+style:
+  version: VERSION
+  css:
+    theme:
+      assets/css/asu.style.css: {}
+  js:
+    assets/js/asu.script.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal

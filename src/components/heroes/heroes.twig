@@ -1,0 +1,24 @@
+<div class="uds-hero uds-hero-{{ size }}"
+     style="background-image: linear-gradient(180deg, #19191900 0%, #191919c9 100%), url({{ hero_background }});">
+  <div class="container uds-hero-container">
+    {# Headings Template #}
+    {% include '@asu/headings/heading-highlighted.twig' with {
+      html_tag : html_tag,
+      heading: heading,
+      highlight: 'gold',
+    } %}
+    {% if size != 'sm' %}
+      <div class="uds-hero-text col-sm-12 col-md-7">
+        <p>{{ hero_body }}</p>
+        {# Button link template #}
+        {% include '@asu/links/button-link.twig' with {
+          url : url,
+          label: label,
+          color: 'gold',
+        } %}
+      </div>
+    {% endif %}
+  </div>
+</div>
+
+
